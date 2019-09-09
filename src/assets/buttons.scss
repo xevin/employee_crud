@@ -1,0 +1,42 @@
+.button {
+  border: 1px solid #888;
+  background-color: #eee;
+  border-radius: 4px;
+  padding: .4em;
+  margin: 0 .1rem;
+  text-align: center;
+  display: inline-block;
+  display: inline-flex;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+
+  &:hover {
+    filter: brightness(1.1);
+    transform: scale(1.02);
+  }
+
+  &--primary {
+    border-color: transparent;
+    background-color: rebeccapurple;
+    color: white;
+  }
+}
+
+.icon-button {
+  @extend .button;
+  width: 1.8rem;
+  height: 1.8rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-button {
+  padding: .2em;
+}
+
+.big-button {
+  @extend .button;
+  padding: 1em;
+  margin: .5em;
+}
